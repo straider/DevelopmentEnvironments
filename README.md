@@ -5,4 +5,4 @@
 
 # [Linux](Linux/README.md)
 
-# [MacOs](MacOs/README.md)
+# [macOS](macOS/README.md)
