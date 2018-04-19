@@ -3,7 +3,7 @@
 
 # Sections
 
-## MacOs
+## macOS
 
 - Enable Dark Theme (System and Apps);
 
@@ -109,7 +109,7 @@ Restore profile from latest backup.
 
 #### IDEA
 
-## MacOS
+## macOS
 
 ### Environment Variables
 
