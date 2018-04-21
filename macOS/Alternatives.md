@@ -7,22 +7,22 @@ This document keeps a list of macOS alternatives to Windows software.
 
 ## WinMerge
 
-- [Diffuse](https://sourceforge.net/projects/diffuse/)
-- [DiffMerge](http://www.sourcegear.com/diffmerge/)
 - [Meld](http://meldmerge.org/)
 - [Meld for OSX](https://yousseb.github.io/meld/)
+- [DiffMerge](http://www.sourcegear.com/diffmerge/)
 - [P4Merge](https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge)
+- [Diffuse](https://sourceforge.net/projects/diffuse/)
 
 ## TortoiseSVN
 
-- [SnailSVN](https://langui.net/snailsvn/)
-- [SvnX](https://code.google.com/archive/p/svnx/)
+- ~[SnailSVN](https://langui.net/snailsvn/)~
+- ~[SvnX](https://code.google.com/archive/p/svnx/)~
 
 ## TortoiseGit
 
-- [SnailGit](https://langui.net/snailgit/)
-- [GitX](http://gitx.frim.nl/)
-- [GitX-dev](https://rowanj.github.io/gitx)
+- ~[SnailGit](https://langui.net/snailgit/)~
+- ~[GitX](http://gitx.frim.nl/)~
+- ~[GitX-dev](https://rowanj.github.io/gitx)~
 - [GitUp](http://gitup.co/)
 - [Fork](https://git-fork.com/)
 - [GitHub Desktop](https://desktop.github.com/)
@@ -66,13 +66,13 @@ This document keeps a list of macOS alternatives to Windows software.
 
 # Alternatives
 
-| Windows     | macOS          ||
-|-------------|----------------||
-| WinMerge    | Meld           | Diffuse   |
-| TortoiseSVN | SnailSVN       | SvnX      |
-| TortoiseGit | SnailGit       | GitX      |
-| Notepad++   | BBEdit         | Atom      |
-| MdCharm     | ReText         |           |
-| Geany       | Geany          |           |
-| 7-Zip       | The Unarchiver | 7zX       |
-| mintty      | iTerm2         | Alacritty |
+| Windows     | 1st            | 2nd        |
+|-------------|----------------|------------|
+| mintty      | iTerm2         | Alacritty  |
+| 7-Zip       | The Unarchiver | 7zX        |
+| Notepad++   | BBEdit         | Atom       |
+| MdCharm     | ReText         |            |
+| Geany       | Geany          |            |
+| WinMerge    | Meld           | DiffMerge  |
+| TortoiseSVN | SvnX           |            |
+| TortoiseGit | GitX.          | Sourcetree |
