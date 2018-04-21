@@ -19,7 +19,7 @@ These are personal notes on how to bring up a full Development Environment on to
 # Challenges
 
 - Learn about keyboard shortcuts / key combinations:
-    - Home / End
+    - Home / End: Use Command + Left / Right
     - Insert / Delete
     - Control vs. Command vs. Option
 - Learn about mouse gestures
