@@ -1,4 +1,4 @@
-﻿:: macOS DevEnv :: Networking ::
+:: macOS DevEnv :: Networking ::
 ================================
 
 # Overview
@@ -7,13 +7,13 @@
 
 ## Browser
 
-### [Chrome 55.0.2883.87](https://www.google.co.uk/chrome/browser)
+### [Chrome 65.0.3325.181](https://www.google.com/chrome/)
 
-### [Firefox 50.1.0](https://www.mozilla.org/en-GB/firefox/)
+### ~~[Firefox 59.0.2](https://www.mozilla.org/en-GB/firefox/new/)~~
 
 ## Mail
 
-### [Thunderbird 45.5.1](https://www.mozilla.org/en-GB/thunderbird/)
+### ~~[Thunderbird 52.7.0](https://www.thunderbird.net/en-GB/)~~
 
 ## SSH
 
@@ -21,11 +21,11 @@
 
 ### [Slack 3.1.0](https://slack.com)
 
-### [Skype](https://www.skype.com/en/)
+### [Skype 8.19.0.1](https://www.skype.com/en/get-skype/)
 
-### [Bluejeans](https://www.bluejeans.com)
+### [Bluejeans](https://www.bluejeans.com/downloads)
 
 ### [Zoom](https://www.zoom.us)
 
-- [Zoom Client for Meetings](https://www.zoom.us/download#client_4meeting)
+- [Zoom Client for Meetings 4.1.23501.0416](https://www.zoom.us/download#client_4meeting)
 - [Zoom Extension for Browsers](https://www.zoom.us/download#chrome_ext)

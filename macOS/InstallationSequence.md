@@ -1,4 +1,4 @@
-﻿:: Installation Sequence ::
+:: Installation Sequence ::
 ===========================
 
 # Sections
@@ -7,23 +7,29 @@
 
 - Enable Dark Theme (System and Apps);
 
+### Homebrew
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew update
+brew doctor
+
+brew tap caskroom/cask
+brew tap homebrew/services
+```
+
 ## General
 
-### Metapad
+### BBEdit
 
-### Notepad++
+### The Unarchiver
 
-### MdCharm
-
-### 7-Zip
+- Associate extensions
 
 ## Networking
 
 ### Chrome
-
-### Thunderbird
-
-Restore profile from latest backup.
 
 ### Slack
 
@@ -35,41 +41,47 @@ Restore profile from latest backup.
 
 ## Hosting
 
-### VirtualBox
+### ~~VirtualBox~~
 
-### Vagrant
+### ~~Vagrant~~
 
-### Docker Toolbox
+### Docker for Mac
 
 ### OpenShift
+
+#### Client Tools
 
 #### ~~Docker Machine Cluster~~
 
 #### ~~Atomic Developer Bundle~~
 
-#### Container Developer Kit
+#### ~~Container Developer Kit~~
 
 #### MiniShift
 
 ### PostgreSQL
 
-### MongoDB
+### ~~MongoDB~~
 
 ## Coding
 
-### WinMerge
+### Meld
 
-### TortoiseSVN
+### ~~SvnX~~
 
-### TortoiseGit
+### ~~GitX~~
+
+### Sourcetree
+
+- Dark Theme
 
 ### Compilers
 
 #### Java
 
-##### Java 7u80
+##### ~~Java 7u80~~
 
-##### Java 8u112
+##### Java 8u161
 
 ##### Build Tools
 
@@ -79,17 +91,19 @@ Restore profile from latest backup.
 
 ###### Gradle
 
-#### Mono
+#### ~~Mono~~
 
-#### Go
+#### ~~Go~~
+
+#### ~~Rust~~
 
 ### Interpreters
 
 #### Groovy
 
-#### JRuby
+#### ~~JRuby~~
 
-#### Jython
+#### ~~Jython~~
 
 #### Python
 
@@ -103,11 +117,13 @@ Restore profile from latest backup.
 
 #### Geany
 
-#### NetBeans
+#### ~~NetBeans~~
 
-#### Eclipse
+#### ~~Eclipse~~
 
 #### IDEA
+
+#### DBeaver
 
 ## macOS
 

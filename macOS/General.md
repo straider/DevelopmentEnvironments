@@ -1,22 +1,28 @@
-﻿:: macOS DevEnv :: General ::
+:: macOS DevEnv :: General ::
 =============================
 
 # Overview
 
 # Applications
 
-## [Metapad 3.6](http://liquidninja.com/metapad/)
+## ~~[gedit 3.2.6-3](https://wiki.gnome.org/Apps/Gedit#Download)~~
 
-## [Notepad++ 7.2.2](https://notepad-plus-plus.org/)
+## [BBEdit 12](http://www.barebones.com/products/bbedit/)
 
-## ~~[gedit 3.20.1](https://wiki.gnome.org/Apps/Gedit)~~
+```bash
+brew cask install bbedit
+```
 
-## [MdCharm 1.1.6](http://www.mdcharm.com/)
+## ~~[ReText 7.0.1](https://github.com/retext-project/retext/releases)~~
 
-## [7-Zip 16.04](http://www.7-zip.org/)
+## [The Unarchiver 3.11.5](https://theunarchiver.com/)
 
-## [ConEmu 16.12.06](http://conemu.github.io/en/)
+```bash
+brew cask install the-unarchiver
+```
 
-### ~~[Clink 0.4.8](http://mridgers.github.io/clink/)~~
+## [iTerm2 3.1.5](https://www.iterm2.com/downloads.html)
 
-### ~~[cmder 1.3.2](http://cmder.net/)~~
+```bash
+brew cask install iterm2
+```
