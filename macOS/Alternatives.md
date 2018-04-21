@@ -75,4 +75,4 @@ This document keeps a list of macOS alternatives to Windows software.
 | Geany       | Geany          |            |
 | WinMerge    | Meld           | DiffMerge  |
 | TortoiseSVN | SvnX           |            |
-| TortoiseGit | GitX.          | Sourcetree |
+| TortoiseGit | GitX           | Sourcetree |
