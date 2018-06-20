@@ -38,7 +38,12 @@ brew install openshift-cli
 ### [MiniShift 1.15.1](https://github.com/minishift/minishift)
 
 ```bash
-brew install minishift
+brew cask install minishift
+
+brew install xhyve
+brew install docker-machine-driver-xhyve
+sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
 
 ## [PostgreSQL 10.3](https://www.postgresql.org/download/macosx/)

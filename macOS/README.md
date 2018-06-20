@@ -1,4 +1,4 @@
-﻿:: macOS DevEnv ::
+:: macOS DevEnv ::
 ==================
 
 # Overview
@@ -25,3 +25,5 @@ These are personal notes on how to bring up a full Development Environment on to
 - Learn about mouse gestures
 - Get familiar with Homebrew / MacPorts / Fink
 - Replace Bash 3.x with Bash 4.x
+- Install Gnu UNix utilities
+    - sed

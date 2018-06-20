@@ -22,10 +22,10 @@ brew tap caskroom/cask
 brew tap homebrew/services
 ```
 
-### Bash 4
+### GNU bash
 
 ```bash
-brew install bash bash-completion
+brew install bash bash-completion@2
 ```
 
 Enter sudo mode, to configure Bash as the default Shell:
@@ -38,6 +38,10 @@ Configure Bash as the default Shell, in sudo mode:
 echo "$(brew --prefix)/bin/bash" >> /etc/shells
 chsh -s $(brew --prefix)/bin/bash
 ```
+
+### Show Hidden Files
+
+[Quickly Show/Hide Hidden Files on macOS](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/)
 
 ## General
 
