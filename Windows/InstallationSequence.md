@@ -1,9 +1,7 @@
 ﻿:: Installation Sequence ::
 ===========================
 
-# Sections
-
-## Windows 10
+# Windows 10
 
 - Enable Dark Theme (System and Apps);
 - Windows Explorer:
@@ -13,15 +11,17 @@
         - Enable Restore previous folder at Windows logon;
         - Enable Navigation Pane: Expand to Open Folder.
 
-## General
+# Chocolatey
 
-### Metapad
+# General
+
+## Metapad
 
 Settings:
 - General: Insert Tabs as Spaces;
 - Advanced: Default file format: Unix Text.
 
-### Notepad++
+## Notepad++
 
 Installation:
 - Choose Components: Allow plugins to be loaded from %APPDATA%;
@@ -44,7 +44,7 @@ Update Plugin Manager and use it to install these plugins:
 
 **Note**: configure Plugin Manager to install plugins for all users.
 
-### MdCharm
+## MdCharm
 
 Settings;
 - Environment: General: System: Uncheck Show Splash;
@@ -55,7 +55,7 @@ Settings;
         - Display line number;
         - Highlight current line.
 
-### 7-Zip
+## 7-Zip
 
 Options:
 - System:
@@ -63,19 +63,19 @@ Options:
 - Editor:
     - Editor: C:\Program Files (x86)\metapad.exe.
 
-### ConEmu
+## ConEmu
 
-## Networking
+# Networking
 
-### Chrome
+## Chrome
 
-### Thunderbird
+## Thunderbird
 
 Restore profile from latest backup.
 
-### Slack
+## Slack
 
-### Skype
+## Skype
 
 - Uncheck "Make Bing my search engine";
 - Uncheck "Make MSN my homepage".
@@ -84,15 +84,15 @@ After installation then go to Tools -> Options -> Advanced -> Connection and unc
 
 **Note**: to prevent Skype from starting with Windows then uncheck "Start Skype when I start Windows" option in the General settings tab.
 
-### Bluejeans
+## Bluejeans
 
-### Zoom
+## Zoom
 
-### PuTTY
+## PuTTY
 
-## Hosting
+# Hosting
 
-### Cygwin
+## Cygwin
 
 Choose base installation, with chere (Shells).
 
@@ -117,9 +117,9 @@ Error (5): Access is denied.
 /usr/bin/chere: Aborting.
 ```
 
-### MinGW
+## MinGW
 
-#### 32 bit and MSYS
+### 32 bit and MSYS
 
 Run mingw-get-setup.exe:
 - Install to `C:\Hosting\mingw\32\`;
@@ -136,7 +136,7 @@ Execute MinGW Installation Manager and mark these for installation:
 - mingw-developer-toolkit;
 - msys-wget.
 
-#### 64 bit
+### 64 bit
 
 Run mingw-264-install.exe:
 - Architecture: x86_64
@@ -154,13 +154,13 @@ C:/Hosting/mingw/64 /mingw
 C:/Users            /home
 ```
 
-### Git for Windows
+## Git for Windows
 
 - Install to `C:\Hosting\Git\`;
 - Select "Use a TrueType font in all console windows";
 - Select "Checkout as-is, commit as-is".
 
-### VirtualBox
+## VirtualBox
 
 Install to `C:\Hosting\VirtualBox\`.
 
@@ -170,9 +170,9 @@ After installation change preferences:
 - General: Default Machine Folder: `C:\Hosting\VirtualBox VMs\`;
 - Update: "Uncheck Check for Updates".
 
-### Vagrant
+## Vagrant
 
-- Install to `C:\Hosting\Vagrant\`;
+- Install to `C:\Hosting\IaC\Vagrant\`;
 - Requires a restart:
 - Install the following plugins:
     - ~~vagrant-vbguest 0.13.0~~
@@ -191,7 +191,15 @@ Validate the the plugins are installed:
 vagrant plugin list
 ```
 
-### Docker Toolbox
+## Packer
+
+Decompress to `C:\Hosting\IaC\Packer\`.
+ 
+## ~~Docker on Windows~~
+
+~~Install to `C:\Hosting\Containers\Docker\`.~~
+
+## Docker Toolbox
 
 - Install to `C:\Hosting\Containers\Docker Toolbox\`;
 - Uncheck VirtualBox;
@@ -205,15 +213,15 @@ After installation, launch Docker Quickstart Terminal and edit the window proper
     - Window Size Width: 120; Height: 55
     - Window Position: Left: 0; Top: 0
 
-### OpenShift
+## OpenShift
 
-#### ~~Docker Machine Cluster~~
+### ~~Docker Machine Cluster~~
 
-#### ~~Atomic Developer Bundle~~
+### ~~Atomic Developer Bundle~~
 
-#### Container Developer Kit
+### Container Developer Kit
 
-- Unzip OpenShift Client Tools 1.3.3 to `C:\Hosting\Containers\OpenShift\ClientTools\1.3.3\`;
+- Unzip OpenShift Client Tools 3.9.30 to `C:\Hosting\Containers\OpenShift\ClientTools\`;
 - Unzip CDK 2.3.0 to `C:\Hosting\Containers\OpenShift\ContainerDeveloperKit\2.3.0\`;
 - Copy RHEL CDK 7.3 VirtualBox / HyperV Vagrant boxes to `C:\Hosting\Containers\OpenShift\ContainerDeveloperKit\2.3.0\cdk\components\rhel`;
 - Clone pristine rhel/rhel-ose/ sub-folder to a new sub-folder under rhel/ and edit the BOX_NAME property in the Vagrantfile for each new OpenShift Container Platform 3.3 to work with;
@@ -221,13 +229,15 @@ After installation, launch Docker Quickstart Terminal and edit the window proper
 
 **Note**: bare in mind that it's required to have a valid Red Hat Subscription.
 
-#### MiniShift
+### MiniShift
 
-### PostgreSQL
+Decompress to `C:\Hosting\Containers\OpenShift\MiniShift`.
+
+## PostgreSQL
 
 Install to `C:\Hosting\PostgreSQL\pg-9.6.7-1\`.
 
-### MongoDB
+## MongoDB
 
 - Install to `C:\Hosting\MongoDB\3.4.2\`;
 - Create data folder in `C:\Hosting\MongoDB\data\`;
@@ -249,9 +259,19 @@ Make sure that MONGODB_HOME environment variable points to C:\Hosting\MongoDB\3.
 
 **Note**: in local environment, for development purposes, the value of net.bindIp property can be set to 0.0.0.0 to allow remote connections from any address. As it is it only accepts connections from localhost or from the Docker Machine host-only sub-network.
 
-## Coding
+# Coding
 
-### WinMerge
+## TortoiseSVN
+
+Install to `C:\DevKits\VersionControl\TortoiseSVN\`, with command line client tools.
+
+## TortoiseGit
+
+Install to `C:\DevKits\VersionControl\TortoiseGit\`.
+
+After installation it's mandatory to configure user and email.
+
+## WinMerge
 
 - Install to `C:\DevKits\Tools\WinMerge\`;
 - Select Plugins.
@@ -263,7 +283,9 @@ Options:
     - Enable multiple compare windows for Folder compare.
 - Compare:
     - General: Enable moved block detection.
-- Editor: Insert spaces;
+- Editor:
+    - Check "Automatic rescan"
+    - Tabs: Select "Insert spaces"
 - System: External editor: `C:\Program Files (x86)\metapad.exe`;
 - Backup Files:
     - Create backup files into: Global backup folder: `C:\Temp\`;
@@ -276,107 +298,97 @@ Options:
 
 **Note**: activate filter **Exclude Source Control** or create a new one.
 
-### TortoiseSVN
+## Compilers
 
-Install to `C:\DevKits\VersionControl\TortoiseSVN\`, with command line client tools.
+### Java
 
-### TortoiseGit
-
-Install to `C:\DevKits\VersionControl\TortoiseGit\`.
-
-After installation it's mandatory to configure user and email.
-
-### Compilers
-
-#### Java
-
-##### Java 5u22
+#### Java 5u22
 
 Install to `C:\DevKits\Java\jdk5u22\`.
 
 Do not register with browser.
 
-##### Java 6u45
+#### Java 6u45
 
 Install to `C:\DevKits\Java\jdk6u45\`.
 
-##### Java 7u80
+#### Java 7u80
 
 Install to `C:\DevKits\Java\jdk7u80\`.
 
-##### Java 8u112
+#### Java 8u172
 
-Install to `C:\DevKits\Java\jdk8u112\`.
+Install to `C:\DevKits\Java\jdk8u172\`.
 
 Set JAVA_HOME environment variable to `C:\DevKits\Java\jdk8u112\`.
 
-##### Build Tools
+#### Build Tools
 
-###### Ant
+##### Ant
 
-Add `C:\DevKits\Java\ant-1.10.0\bin\` to DEVKITS environment variable.
+Add `C:\DevKits\Java\ant-1.10.4\bin\` to DEVKITS environment variable.
 
-###### Maven
+##### Maven
 
-Add `C:\DevKits\Java\maven-3.3.9\bin\` to DEVKITS environment variable.
+Add `C:\DevKits\Java\maven-3.5.4\bin\` to DEVKITS environment variable.
 
-###### Gradle
+##### Gradle
 
-Add `C:\DevKits\Java\gradle-3.2.1\bin\` to DEVKITS environment variable.
+Add `C:\DevKits\Java\gradle-4.8.1\bin\` to DEVKITS environment variable.
 
-#### Mono
+### Mono
 
-#### Go
+### Go
 
-Add `C:\DevKits\Go-1.10\bin\` to DEVKITS environment variable.
+Add `C:\DevKits\Go-1.10.3\bin\` to DEVKITS environment variable.
 
 Set GOPATH environment variable to `C:\Projects\Go\`.
 
-### Interpreters
+## Interpreters
 
-#### Groovy
+### Groovy
 
-Install to `C:\DevKits\Java\groovy-2.4.7\`.
+Install to `C:\DevKits\Java\groovy-2.4.15\`.
 
 **Note**: without JAVA_HOME set the installation fails to find a proper JDK and switches to 32 bit mode. Configure JAVA_HOME to point to the JDK, instead of the JRE which is done by default.
 
-#### JRuby
+### JRuby
 
-Install to `C:\DevKits\Java\jruby-9.1.6.0\`.
+Install to `C:\DevKits\Java\jruby-9.2.0.0\`.
 
-#### Jython
+### Jython
 
 Install to `C:\DevKits\Java\jython-2.7.0\`.
 
-#### Python
+### Python
 
 Customize installation:
 - Add Python 3.6 to PATH;
 - Install for all users;
-- Install to `C:\DevKits\Python\3.6.6\`.
+- Install to `C:\DevKits\Python\3.6.5\`.
 
-#### Ruby
+### Ruby
 
-- Install to `C:\DevKits\Ruby\2.3.3\`;
+- Install to `C:\DevKits\Ruby\2.5.1-1\`;
 - Select:
     - Install Tcl/Tk support;
     - Add Ruby executables to your PATH;
     - Associate .rb and .rbw files with this Ruby installation.
 
-#### Javascript
+### Javascript
 
-##### Node.js
+#### Node.js
 
 Install to `C:\DevKits\Javascript\nodejs\7.4.0\`.
 
-### IDEs
+## IDEs
 
-#### Geany
+### Geany
 
 - Install to `C:\DevKits\IDEs\Geany\`;
 - Uncheck Language Files;
 
-#### NetBeans
+### NetBeans
 
 - Uncheck all;
 - Check Base IDE;
@@ -388,11 +400,11 @@ Install to `C:\DevKits\Javascript\nodejs\7.4.0\`.
 
 **Note**: without JAVA_HOME set the installation fails to find a proper JDK and switches to 32 bit mode.
 
-#### Eclipse
+### Eclipse Oxygen 4.7
 
-Install to `C:\DevKits\IDEs\Eclipse Neon\`.
+Install to `C:\DevKits\IDEs\Eclipse Oxygen\`.
 
-#### IDEA
+### IDEA Community Edition 2018.1.5
 
 - Install to `C:\DevKits\IDEs\IDEA\`;
 - Enable Create Desktop shortcut: 32-bit launcher and 64-bit launcher;
@@ -416,42 +428,44 @@ Install plugins:
 - Docker integration 2.4.1
 - Kubernetes and OpenShift Resource Support v0.7
 
-## Windows 10
+### DBeaver Community Edition
 
-### Environment Variables
+# Windows 10
 
-#### HOSTING
+## Environment Variables
+
+### HOSTING
 
 Issue the following command from a Windows Command Prompt run as Administrator to set system wide environment variable HOSTING:
 
 ```bash
-setx /M HOSTING "C:\Hosting\Git\cmd;C:\Hosting\Git\bin;C:\Hosting\Vagrant\bin;C:\Hosting\Containers\Docker Toolbox;C:\Hosting\Containers\OpenShift\ClientTools\1.3.3;C:\Hosting\PostgreSQL\pg-9.6.7-1\bin;C:\Hosting\MongoDB\3.4.2\bin"
+setx /M HOSTING "C:\Hosting\Git\cmd;C:\Hosting\Git\bin;C:\Hosting\IaC\Packer;C:\Hosting\IaC\Vagrant\bin;C:\Hosting\Containers\Docker Toolbox;C:\Hosting\Containers\OpenShift\ClientTools;C:\Hosting\Containers\OpenShift\MiniShift;C:\Hosting\PostgreSQL\pg-9.6.7-1\bin;C:\Hosting\MongoDB\3.4.2\bin"
 ```
 
-#### DEVKITS
+### DEVKITS
 
 Issue the following command from a Windows Command Prompt run as Administrator to set user specific environment variables, especially DEVKITS:
 
 ```bash
-setx JAVA_HOME   "C:\DevKits\Java\jdk8u112"
-setx ANT_HOME    "C:\DevKits\Java\ant-1.10.0"
-setx MAVEN_HOME  "C:\DevKits\Java\maven-3.3.9"
-setx GRADLE_HOME "C:\DevKits\Java\gradle-3.2.1"
-setx GROOVY_HOME "C:\DevKits\Java\groovy-2.4.7"
-setx GO_HOME     "C:\DevKits\Go-1.10"
-setx GOPATH      "C:\Projects\Go"
-setx RUBY_HOME   "C:\DevKits\Ruby\2.3.3"
-setx JRUBY_HOME  "C:\DevKits\Java\jruby-9.1.6.0"
-setx PYTHON_HOME "C:\DevKits\Python\3.6.0"
+setx RUBY_HOME   "C:\DevKits\Ruby\2.5.1-1"
+setx PYTHON_HOME "C:\DevKits\Python\3.6.5"
+setx JAVA_HOME   "C:\DevKits\Java\jdk8u172"
+setx ANT_HOME    "C:\DevKits\Java\ant-1.10.4"
+setx MAVEN_HOME  "C:\DevKits\Java\maven-3.5.4"
+setx GRADLE_HOME "C:\DevKits\Java\gradle-4.8.1"
+setx GROOVY_HOME "C:\DevKits\Java\groovy-2.4.15"
+setx JRUBY_HOME  "C:\DevKits\Java\jruby-9.2.0.0"
 setx JYTHON_HOME "C:\DevKits\Java\jython-2.7.0"
 setx NODEJS_HOME "C:\DevKits\Javascript\nodejs\7.4.0"
+setx GO_HOME     "C:\DevKits\Go-1.10.3"
+setx GOPATH      "C:\Projects\Go"
 
-setx DEVKITS "%JAVA_HOME%\bin;%ANT_HOME%\bin;%MAVEN_HOME%\bin;%GRADLE_HOME%\bin;%GROOVY_HOME%\bin;%GO_HOME%\bin;%RUBY_HOME%\bin;%NODEJS_HOME%;%JRUBY_HOME%\bin;%PYTHON_HOME%\Scripts\;%PYTHON_HOME%\;%JYTHON_HOME%\bin;C:\DevKits\VersionControl\TortoiseSVN\bin;C:\DevKits\VersionControl\TortoiseGit\bin;"
+setx DEVKITS "%RUBY_HOME%\bin;%PYTHON_HOME%\;%JAVA_HOME%\bin;%ANT_HOME%\bin;%MAVEN_HOME%\bin;%GRADLE_HOME%\bin;%GROOVY_HOME%\bin;%JRUBY_HOME%\bin;%PYTHON_HOME%\Scripts\;%JYTHON_HOME%\bin;%NODEJS_HOME%;%GO_HOME%\bin;C:\DevKits\VersionControl\TortoiseSVN\bin;C:\DevKits\VersionControl\TortoiseGit\bin;"
 ```
 
 **Note**: This also fixes JAVA_HOME, from the default JRE to the JDK, which must be done before installing Groovy.
 
-#### PATH
+### PATH
 
 Issue the following command from a Windows Command Prompt run as Administrator to set system wide environment variable PATH:
 

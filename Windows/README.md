@@ -18,6 +18,11 @@ These are personal notes on how to bring up a full Development Environment on to
 
 ## Chocolatey
 
+- How to install, upgrade and uninstall packages?
+- How to specifiy installation folder?
+
+*Note*: not all packages allow specifiying installation folder and not all allow it in the same way.
+
 ## Windows Subsystem for Linux
 
 - [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
@@ -32,3 +37,9 @@ Open PowerShell as Administrator and run:
 ```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
+
+## VirtualBox vs. Hyper-V
+
+The article [Client Hyper-V vs. VirtualBox](https://www.altaro.com/hyper-v/client-hyper-v-vs-virtualbox/) provides a reasonably good comparison between Type 1 Hypervisor and Type 2 Hypervisor - Hyper-V and VirtualBox.
+
+It seems that the most flexible option is to use VirtualBox, but then one has to use Docker Toolbox instead of Docker on Windows.
